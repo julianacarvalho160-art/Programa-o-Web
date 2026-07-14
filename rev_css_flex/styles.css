@@ -1,0 +1,46 @@
+
+.container{
+    display: flex;
+    /* flex tem o comportamento inline */
+
+/* FLEX-DIRECTION -> POSIÇÃO DOS ITENS: COLUNA OU LINHA */
+ flex-direction: row;
+
+ /* FORMAS DE ALINHAMENTO -- MAIN AXIS */
+ height: 600px;
+/* justify-content: center; */
+/*  p/usá-lo, considere aumentar o height
+-> flex-start joga os itens no início do container
+-> flex-end joga os itens no final do container 
+-> center joga os itens no centro do container
+-> space-between distribui os itens igualmente no container, que ocupem todo o espaço do container
+->space-around:Mesma coisa que o anterior acima, e acrescenta margem
+*/
+
+
+/* FORMAS DE ALINHAMENTO -- CROSS AXIS */
+ /* align-items: space-between  */
+/* 
+strech -> ocupa  toda a linha
+-> flex-start joga os itens no início do container
+-> flex-end joga os itens no final do container 
+-> center joga os itens no centro do container
+-> space-between distribui os itens igualmente no container, que ocupem todo o espaço do container
+->space-around:Mesma coisa que o anterior acima, e acrescenta margem
+*/
+
+/* FORMAS DE ALINHAMENTO -- VERTICAL, usado qdo tem +1 linha */
+/* align-content: center; */
+ 
+/* FLEX-FLOW
+WRAP-> Itens com largura grande em tela pequena, ele quebra a parte que nõ coube jogando o conteúdo para baixo.
+
+*/
+
+
+}
+
+.container div{
+    border: 1px solid black;
+    padding:10px;
+}

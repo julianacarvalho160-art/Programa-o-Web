@@ -1,0 +1,245 @@
+
+/* SELECTORS:Seleciona uma tag html, como h1, se tiver vários h1s, todos eles ficarão em amarelo*/
+
+
+/* h1{
+    color:yellow;
+} */
+
+
+/* CLASSES x ID */
+
+/* Classes: Selecionar mais de um elemento. */
+/* ID: Selecionar apenas um elemento.  */
+
+
+/* .segundo-h1{
+    color:red;
+} */
+
+/* #primeiro-h1{
+    color:green;
+} */
+
+
+
+/* CORES */
+
+/* Nome da cor: ex:. background:red */
+/* Hexadecimal: color: #000000 */
+/* RGB: color: rgb(0, 0, 255); */
+/* RGBA: coolr:rgba(0, 0, 255, 0.6); maior o num + forte a cor, p/ zero define a transparência */
+
+
+/* MUDANÇA DE TODO O TEXTO DO BODY */
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+
+
+/* Min:20:28 -> Tutorial de como usarr o google fonts */
+
+.box{
+    /* Aqui está todo o formulário dentro de uma classe caixa. O width é para impedir que os inputs ocupem toda a linha. */
+    width:80%;
+    margin:auto;
+}
+
+.container{
+    background-color: #333;
+    color: #eee;
+    width: 80%;
+    /* O width deixa mais responsivo,exceto em largura por causa do paddimg */
+    box-sizing: border-box;
+    /* Devolve a responsividade, perdida pelo padding em relação ao width */
+
+    margin-top:auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    /* a Margin mesma coisa que acima */
+    margin:50px;
+
+
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    /* O padding, mesma coisa que os de cima */
+    padding: 20px;
+
+    border-top: 15px;
+    border-left: 15px;
+    border-right: 15px;
+    border-bottom: 15px;
+    /* O border, mesma coisa que os de cima */
+    border:15px solid rgb(0, 0, 255);
+}
+/* Background color: Cor do container */
+/* Color: Cor do texto do container */
+/* width: largura, com porcentagem, ela se adequa ao tamanho da tela, da página */
+/* margin: espaçamento do container em relação á página */
+/* Texto = conteúdo */
+/* padding: espaço entre o conteúdo e a borda vermelha. Os debaixo mesma coisa que essa aqui.
+   padding-top: Espaçamento entre o conteúdo a a borda na parte de cima.
+   padding-left: Espaçamento entre o conteúdo e a borda do lado esquerdo.
+   padding-right:Espaçamento entre o conteúdo e a borda do lado direito.
+   padding-botton:Espaçamento entre o conteúdo e a borda na parte debaixo.
+   Border: Borda do container. Os debaixo mesmma coisa que essa aqui.
+   Border-top: Borda de cima, border-botton: borda debaixo.
+   Border-left: borda esquerda, border-right:borda direita.
+
+*/
+
+.main-aside h2{
+    text-align: center;
+}
+.main-aside h2:hover{
+    color:green;
+    /*passar o cursor em cima e fica verde */
+    cursor:pointer;
+    /* passar o cursor em cima e ele muda o formato para de "mãozinha" */
+}
+
+.main-aside ul{
+    list-style: none;
+    /* Tirar as bolinhas da lista não-ordenada */
+    text-align: center;
+    /* alinhar o texto ao centro */
+    padding: 0%;
+    /* Tirar o padding que impede o texto de ficar alinhado com a lista */
+}
+
+.main-aside a{
+    text-decoration: none;
+    /* tira o sublinhado dos  links por trás dos nomes */
+    color:black;
+    /* define a cor dos  links como preta*/
+}
+
+.main-aside ul a:hover{
+    color: red;
+    /* Ao passar o cursor por cima das palavras com o link, ele fica vermelho e mostra o endereço dos links */
+}
+
+.main-aside ul a:visited{
+    color: green;
+    /* links visitados ficam marcados com a cor verde */
+}
+
+/* formularios */
+
+.main-form{
+    padding-left: 20px;
+    /* aumentar espaçamento */
+}
+
+.main-form .form-group{
+    padding-bottom: 10px;
+    /* aumentar espaçamento */
+}
+
+.main-form .form-group input{
+    padding: 10px;
+    width: 100%;
+}
+.main-form .form-group label{
+    display: block;
+    /* alinhar os labels */
+}
+
+.button-form{
+    padding: 15px;
+    background-color: #333;
+    color:white;
+}
+
+/* POSITION */
+
+/* Static: Valor padrão, fica normal.
+   Relative: top -> o elemento é movido para baixo (colocado uma qtde de pixels em cima dele);
+   Relative: left -> O elementoo é movido para a direita (colocado uma qtde de pixels à esquerda dele);
+   Relative: right -> O elemento é movido para a esquerda (colocado uma qtde de pixles à direita dele);
+   Absolute -> Posição do elemento filho que está dentro do elemento pai, adiciona ou tira pixels;
+   Pai (Caixa grande), filho (caixinha dentro do pai), 
+  Absolute: top -> filho vai p/ a parte de cima do pai.
+  Absolute: right -> filho vai p/ a direita do pai.
+  Absolute: botton -> filho vai p/ a parte de baixo do pai.
+  Essas regras só valem se o pai tiver position relative, caso não tenha, o filho irá se posicionar em relação ao body.
+  Fixed: Viewport (visão do usuário em relação ao site), fica fixo, mesmo com a rolagem da tela. Melhor para botão, pode ser sobreposto em página de navegação, os outros elementos  podem passar por cima dele, immpedindo que ele fique fixo na tela ao rolar para baixo.
+  Sticky: Viewport (visão do usuário em relação ao site), fica fixo, mesmo com a rolagem da tela. Melhor para barra de navegação.
+
+*/
+
+.relative{
+    position: relative;
+    border: 3px solid #333;
+    height: 500px; 
+    border-radius: 7px;
+}
+
+
+.relative .absolute{
+   position:absolute;
+   bottom:0;
+}
+
+/* nav.main-navbar -> comandoo cria uma navBar com uma classe */
+/* nav#main-navBar -> comando cria uma navBar com um id */
+
+#main-navbar{
+  background: #333;
+  color:#eee;
+  padding: 15px;
+  text-align: center;
+  margin-bottom:10px;
+  position: sticky;
+  top:0;
+}
+
+.fixed-button{
+    background: #333;
+    color:#eee;
+    border-radius: 50%;
+    width: 50px;
+    height:50px;
+    position: fixed;
+    bottom:0;
+    right: 0;
+    margin:20px;
+
+}
+
+/* Categorias */
+
+.categories ul{
+    list-style: none;
+}
+
+/* first child */
+
+.categories ul li:first-child{
+   color:red;
+}
+/* last child */
+.categories ul li:last-child{
+    color:green;
+}
+
+/* nth child */
+
+.categories ul :nth-child(even){
+    color:blue;
+}
+/* puser even -> par, seleciona todos os elementos pares com a cor azul */
+
+.categories ul:nth-child(odd){
+    color:violet
+}
+/* puser odd -> seleciona todos os elemento ímpares com a cor violeta */

@@ -1,0 +1,174 @@
+<!DOCTYPE html>    
+<html lang="en">
+<head>
+    <!-- Só o título aparece p/ o user, metadata: descrição do site, links para arquivos (CSS, JS) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estutura HTML5</title>
+</head>
+
+<!-- Aparece p/ o user -->
+<body>
+
+  <nav>
+    <ul>
+        <li><a href="indexx.html">Início</a></li>
+    </ul>
+</nav>
+    <!-- Cabeçalhos -->
+  <h1>Hello World!</h1>
+  <h1>Cabeçalhos nivel 1</h1> 
+  <h2>Cabeçalhos nivel 2</h2> 
+  <h3>Cabeçalhos nivel 3</h3> 
+  <h4>Cabeçalhos nivel 4</h4> 
+  <h5>Cabeçalhos nivel 5</h5> 
+  <h6>Cabeçalhos nivel 6</h6>    
+
+  <!-- Parágrafos -->
+
+  <p>Lorem ipsum dolor sit <strong>amet</strong> consectetur adipisicing elit. Delectus velit libero necessitatibus excepturi. Consequuntur <em>veritatis</em> sit ullam repudiandae beatae pariatur distinctio totam architecto a dolore. Modi tempore id nam iure.</p>
+
+  <!-- links, podem apontar para arquivo entre reticências e abrir página -->
+
+  <a href="https://google.com">google</a> 
+  <!-- Abre em cima da mesma aba do site html que estamos desenvolvendo -->
+
+  <a href="https://google.com" target="_blank ">google</a>
+  <!-- Abre o link em uma aba nova -->
+
+  <!-- Elementos inline: Ocupam apenas o tamanho necessário da linha -->
+  <!-- Elementos Block: Ocupa a linha inteira -->
+  <!-- Striong: Negrito, é inline -->
+  <!-- em: Itálico -->
+
+  <!-- Atributos de uma tag -->
+
+  <!-- Inseridos no início de uma tag -->
+  <!-- Coloca um valor entre aspas -->
+  <div class="dicaspardevs"></div>
+
+
+  <!-- Tabelas -->
+
+  <table>
+    <thead>
+        <tr>
+          <th>Nome</th>  
+          <th>Idade</th>
+          <th>Email</th>
+        </tr>
+    </thead>
+
+  <tbody>
+    <tr>
+        <td>Fulano de tal</td>
+        <td>fulanodetal@gmail.com</td>
+        <td>18</td>
+    </tr>
+
+    <tr>
+        <td>Beltrano de tal</td>
+        <td>beltranodetal@gmail.com</td>
+        <td>24</td>
+    </tr>
+
+    <tr>
+        <td>Cicrano de tal</td>
+        <td>cicranodetal@gmail.com</td>
+        <td>29</td>
+    </tr>
+  </tbody>
+  </table>
+
+  <br /> 
+  <hr />
+  <br />
+<!-- br dá espaço -->
+ <!-- hr coloca uma linha -->
+
+
+  <!-- Formulário -->
+
+  <form action="form.php"  method="POST">
+  <!-- dentro do action, você coloca o nome do arquivo para onde você quer mandar o formulário --> 
+   <!-- method, usamos POST, quando queremos mandar informação para o servidor, nome, email -->
+
+   <!-- O label e o input são inline, ficam um do lado do outro, na mesma linha -->
+
+   <!-- <label>Primeiro Nome</label>
+        <input type="text">
+        <label>Segundo Nome</label>
+        <input type="text">-->
+
+ <!-- Solução para um ficar um embaixo do outro -->
+
+ <div>
+        <label>Primeiro Nome</label>
+        <input type="text" placeholder="Entre seu primeiro nome.">
+ </div>
+
+ <div>
+        <label>Segundo Nome</label>
+        <input type="text" placeholder="Entre seu segundo nome">
+ </div>
+ 
+ <div>
+        <label>Email</label>
+        <input type="email" placeholder="user@gmail.com">
+ </div>
+
+ <div>
+        <label>Gênero</label>
+        <select>
+          <option value="Masculino">Masculino</option>
+          <option value="Feminino">Feminino</option>
+        </select>
+ </div>
+  
+ <div>
+   <label>Data de Nascimento:</label>
+   <input type="date"/>
+ </div>
+
+ <div>
+   <label>Senha</label>
+   <input type="password"/>
+ </div>
+
+ <div>
+  <label>Mensagem</label>
+  <textarea name="Mensagem"></textarea>
+ </div>
+
+ <input type="submit" />
+  </form>
+
+<!-- Botões -->
+
+<button>Click-me</button>
+<br />
+
+<!-- Inserção de imagens -->
+
+<img src="./img/imag_qqjpeg.jpeg"alt="Imagem de exemplo" width="100">
+
+<!-- Blockquote -->
+
+<blockquote cite="dicasparadevs.com.br">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sed laudantium odio commodi! Repellendus incidunt recusandae nostrum deserunt atque aspernatur excepturi! Quasi, sit temporibus soluta libero sapiente rerum debitis repudiandae?
+</blockquote>
+
+<!--Em abreviação, passar o cursor em cima e aparecer a palavra inteira  -->
+
+<p>Eu amo a <abbr title="World Wide Web">WWW!</abbr></p>
+
+<!-- Citação -->
+
+<p>Tutorial feito por <cite>dicasparadevs</cite></p>
+</body>
+</html>
+
+
+
+
+
