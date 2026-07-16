@@ -1,46 +1,45 @@
-// CLASSES
+//CLASSES: Uma entidade/molde que pode representar vários objetos:
 
-// Exemplo 1 -> Criação de múltiplos objetos
-
+//Exemplo 1 -> Criação de múltiplos objetos:
 const person ={
     name: "Julia",
     age: 22,
     intro(){
-        return `Olá! Meu nome é ${this.name}`
+        return `Olá! Meu nome é ${this.name}`;
     }
 }
-console.log(person.name)
-console.log(person.intro())
+console.log(person.name);
+console.log(person.intro());
 
 const person2 ={
     name: "Ana Lúcia",
     age: 35,
     intro(){
-        return `Olá! Meu nome é ${this.name}`
+        return `Olá! Meu nome é ${this.name}`;
     }
 }
-console.log(person.name)
-console.log(person.intro())
+console.log(person.name);
+console.log(person.intro());
 
 
-// Exemplo 2 -> Usar classe para múltiplos objetos
+//Exemplo 2 -> Usar classe para múltiplos objetos
 class Person{
     constructor(name, age){
       this.name = name;
       this.age = age;
     }
     intro(){
-        return `Meu nome é ${this.name} e tenho ${this.age} anos`
+        return `Meu nome é ${this.name} e tenho ${this.age} anos`;
     }
 }
 
-const person = new Person("Amanda", 15)
-const person2 = new Person("Iara", 16)
+const person = new Person("Amanda", 15);
+const person2 = new Person("Iara", 16);
 
 console.log(person.intro());
 console.log(person2.intro());
 
-// Exemplo 3 -> Propriedades privadas, getters e setters
+//Exemplo 3 -> Propriedades privadas, getters e setters
 class Person{
     #name; 
     #age;
@@ -50,32 +49,31 @@ class Person{
       this.#age = age;
     }
     intro(){
-        return `Meu nome é ${this.#name} e tenho ${this.#age} anos`
+        return `Meu nome é ${this.#name} e tenho ${this.#age} anos`;
     }
     getName(){
-        return this.#name
+        return this.#name;
     }
     getAge(){
-        return this.#age
+        return this.#age;
     }
     getMoney(){
-        return this.#money
+        return this.#money;
     }
     setMoney(value){
-        this.#money = value
+        this.#money = value;
     }
     incrementMoney(value){
         this.setMoney(this.#money + value);
     }
 }
-const person = new Person("Amanda", 15)
-person.name = "Luisa" //Não quero alterar o nome "Amanda"
-person.setMoney(100)
-person.incrementMoneyt(100)
+const person = new Person("Amanda", 15);
+person.name = "Luisa"; //Não quero alterar o nome "Amanda".
+person.setMoney(100);
+person.incrementMoneyt(100);
 console.log(person.getMoney());
 
-// Exmeplo 4 -> Propriedades estáticas
-
+//Exemplo 4 -> Propriedades estáticas
 class Game{
     static games = []; //novos jogos são add aqui
     title;
@@ -107,8 +105,7 @@ console.log(Game.games)
 
 
 
-//Exemplo 5 ->  Herança
-
+//Exemplo 5 -> Herança:
 class Animal{
     constructor(name){
        this.name = name;
@@ -122,7 +119,7 @@ class Dog extends Animal{
     constructor(name){
         super(name);
     }
-    // sobrescrever
+    //sobrescrever:
     speak(){
         console.log(`${this.name} barked!`);
     }

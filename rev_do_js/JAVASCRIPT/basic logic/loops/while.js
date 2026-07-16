@@ -14,7 +14,7 @@ while(count > 0){
     counts--;
 }
 
-// // Exemplo 3 -> Exibe a quantidade de iterações feitas pelo loop
+// Exemplo 3 -> Exibe a quantidade de iterações feitas pelo loop
 const x = 20;
 let playerX = 0;
 while(playerX < x){
@@ -22,7 +22,7 @@ while(playerX < x){
     playerX++;
 }
 
-// // Exemplo 4
+// Exemplo 4
 let current;
 let times = 0;
 const expected = 8;
